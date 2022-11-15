@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@1&family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* covers the font color across the header, but only the font and font size of nav links. */
+li, a, h1 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 25px;
+    color: #e8eded;
+    text-decoration: none;
+
+}
+
+/* Flexbox to aligin items and give them the needed padding. */
+header {
+    background-image: url(./assets/lightning2.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px 20px 5px; 
+
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Cormorant', serif;
+    margin-left: 170px;
+}
+
+nav ul li {
+    display: inline-block;
+    border: 2px dotted white;
+    padding: 10px;
+}
