@@ -1,39 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@1&family=Lobster&display=swap');
 
+/* Variables for reused fonts and colors throughout my page */
+:root {
+    --buttonFont: 'Lobster', sans-serif;
+    --headerFont: 'Cormorant', serif;
+}
+
+/* The following two tags cover almost the entire page, with a few minor differences in the background color in some places. */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
 
+body {
+    background-color: #f8f9fa;
+    background-image: linear-gradient(25deg, #f8f9fa 6%, #dee2e6 25%, #adb5bd 61%, #495057 91%); 
 }
 
 /* covers the font color across the header, but only the font and font size of nav links. */
-li, a, h1 {
-    font-family: 'Lobster', sans-serif;
+header li a, h1 {
+    font-family: var(--buttonFont);
     font-size: 25px;
-    color: #e8eded;
+    color: #f4f4f8;
     text-decoration: none;
-
 }
 
-/* Flexbox to aligin items and give them the needed padding. */
+/* Flexbox to aligin items in the navigation bar and give them the needed padding. */
+/* Background image from https://pixabay.com/photos/thunderbolt-lightning-weather-storm-1905603/ */
 header {
-    background-image: url(./assets/lightning2.jpg);
+    background-image: url(./assets/lightning3.png);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px 20px 5px; 
-
+    padding: 20px 100px 10px 5px; 
 }
 
 h1 {
+    color: #f9f8f8;
     font-size: 60px;
-    font-family: 'Cormorant', serif;
+    font-family: var(--headerFont);
     margin-left: 170px;
 }
 
+/* The following sets up the links in the nav bar to have translucent border behind them and hover effects when the cursor is over them. */
 nav ul li {
     display: inline-block;
-    border: 2px dotted white;
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.597);
+    border-radius: 8px;
+}
+
+nav ul li a {
+    transition: all 0.3s ease 0;
+}
+
+nav ul li a:hover {
+    color:rgb(173, 181, 179);
+}
+
+#projectLinks h2 {
+    text-align: center;
+    font-size: 280%;
+    font-family: var(--headerFont);
+    padding-top: 20px;
+}
+
+/* The following lines till --'**'-- are styling the project's screenshot scroll box */
+#projectWindow {
+    overflow: auto;
+    white-space: nowrap;
+    justify-content: space-between;
+    margin: 30px 70px;
+    background-color: #495057;
+    border-radius: 8px;
+}
+
+/* The inline display value is what makes the scrollbox horizontal instead of verticle. */
+/* The font is the project title underneath each image */
+#projectWindow div {
+    display: inline-block;
+    padding: 1px;
+    margin: 0 1% 1% 1%;
+    color: #f4f4f8;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--buttonFont);
+    font-size: 200%;
+}
+
+/* Sets up the fade boxes below */
+.projectBoxes {
+    position: relative;
+}
+
+.projectBoxes img {
+    padding: 15px;
+    width: 350px;
+    height: 250px;  
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    display: block;
+}
+/* --'**'-- */
+
+/* Along with the noted code above the following 4 elements create the information boxes that pop up in front of the images in the project window. */
+.fadeInBox {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.projectBoxes:hover img {
+    opacity: 0.3;
+}
+
+.projectBoxes:hover .fadeInBox {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.fadeInBoxText p {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: #f5f24cef;
+    color: #495057;
+    font-size: 16px;
+    padding: 20px 20px;
+    margin-bottom: 85px;
 }
