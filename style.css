@@ -18,8 +18,8 @@
 }
 
 body {
-    background-image: url(./assets/colorful-abstract-universe.jpg);
-    /* background-color: #3a726cb6;     */
+    /* background-image: url(./assets/colorful-abstract-universe.jpg); */
+    background-color: #3a726cb6;    
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -118,7 +118,7 @@ nav a:hover {
     overflow: auto;
     white-space: nowrap;
     justify-content: space-between;
-    margin: 0 30px 30px 30px;
+    margin: 0 30px 10px 30px;
     background-color: var(--boxBackground);
     border-radius: 0 0 8px 8px;
 }
@@ -150,6 +150,11 @@ nav a:hover {
     backface-visibility: hidden;
     display: block;
 }
+
+#project1 img {
+    width: 600px;
+    height: 350px;
+}
 /* --'**'-- */
 
 /* Along with the noted code above the following 4 elements create the information boxes that pop up in front of the images in the project window. */
@@ -180,6 +185,7 @@ nav a:hover {
     margin-bottom: 85px;
 }
 
+/* This just styles the links directly underneath the project boxes */
 .githubLinkText {
     text-decoration: none;
     color: silver;
@@ -190,16 +196,17 @@ nav a:hover {
     color: silver;
 }
 
-/* The following is for the two sections below the project links */
+/* The following is for the two sections below the project links scrollbox */
 .bottomBoxes {
     font-size: 45px;
     font-family: var(--headerFont);
     color: var(--bodyColor);
     display: inline-block;
-    align-content: center;
     margin-left: 37px;
+    margin-top: 10px;
     text-align: center;
     border-radius: 30%;
+    width: 100%;
 }
 
 .bottomBoxes h2 {
@@ -209,7 +216,7 @@ nav a:hover {
 }
 
 #previousJobs {
-    width: 500px;
+    width: 30%;
     background-color: var(--boxBackground);
 }
 
@@ -224,7 +231,7 @@ nav a:hover {
 
 /* The following 4 lines contain the contact info and the social links including the color change hover effect. */
 #contactForm {
-    width: 700px;
+    width: 50%;
     position: relative;
     bottom: 1em;
     background-color: var(--boxBackground);
@@ -247,4 +254,74 @@ nav a:hover {
 
 /* Below are the media queries used to help the page adjust to screen size as needed. */
 
+/* As screen gets small I removed image to make it look and flow better, I also removed the hover effect over the about me text for easier visibility on smaller screens. Otherwise I just adjusted sizing of elements to better fit smaller screens. */
+@media screen and (max-width: 1320px) {
+    .aboutMeBlurb {
+        margin: 10px;
+        background-color: #495057;
+        width: 100%;
+        margin-top: 80px;
+    }
 
+    .aboutMe img {
+        display: none;
+    }
+
+    .bottomBoxes {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    #contactForm {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        background-color: #495057;
+    }
+
+    .aboutMeBlurb {
+        width: 100%;
+        margin-top: 120px;
+    }
+
+    .bottomBoxes {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    #previousJobs {
+        width: 100%;
+    }
+
+    #contactForm {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding-right: 20%;
+        background-color: #495057;
+    }
+
+    .aboutMeBlurb {
+        width: 100%;
+        margin-top: 170px;
+    }
+
+    .bottomBoxes {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    #previousJobs {
+        width: 100%;
+    }
+
+    #contactForm {
+        width: 100%;
+    }
+}
