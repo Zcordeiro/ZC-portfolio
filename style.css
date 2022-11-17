@@ -4,6 +4,8 @@
 :root {
     --buttonFont: 'Lobster', sans-serif;
     --headerFont: 'Cormorant', serif;
+    --headerColor: #f8f9fa;
+    --boxBackground: #495057;
 }
 
 /* The following two tags cover almost the entire page, with a few minor differences in the background color in some places. */
@@ -14,15 +16,15 @@
 }
 
 body {
-    background-color: #f8f9fa;
-    background-image: linear-gradient(25deg, #f8f9fa 6%, #dee2e6 25%, #adb5bd 61%, #495057 91%); 
+    background-image: url(./assets/waterfall1.JPG);
+    height: 1000px;
 }
 
 /* covers the font color across the header, but only the font and font size of nav links. */
 header li a, h1 {
     font-family: var(--buttonFont);
     font-size: 25px;
-    color: #f4f4f8;
+    color: var(--headerColor);
     text-decoration: none;
 }
 
@@ -59,21 +61,61 @@ nav ul li a:hover {
     color:rgb(173, 181, 179);
 }
 
+/* The following elements cover the about me section and the image */
+.aboutMe {
+    display: flex;
+    padding: 3%;
+    align-items: center;
+}
+
+.aboutMe img {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    margin: 0 2% 0 2%;
+}
+
+.aboutMeBlurb {
+    border-radius: 15px;
+    font-size: 25px;
+    text-align: center;
+    width: 80%;
+    margin: 0 2% 0 2%;
+    padding: 5px;
+    color: #d0d0d0;
+} 
+
+.aboutMeBlurb h2 {
+    font-family: var(--headerFont);
+    color: var(--headerColor);
+    font-size: 200%;
+}
+
+.aboutMeBlurb:hover {
+    background-color: #495057;
+    color: var(--headerColor);
+}
+
+
+/* The following lines till --'**'-- are styling the project's screenshot scroll box */
 #projectLinks h2 {
     text-align: center;
     font-size: 280%;
     font-family: var(--headerFont);
+    color: #e8e8e8;
     padding-top: 20px;
+    background-color: #495057df;
+    margin: 0 30px 0 30px;
+    border-radius: 8px 8px 0 0;
 }
 
-/* The following lines till --'**'-- are styling the project's screenshot scroll box */
 #projectWindow {
     overflow: auto;
     white-space: nowrap;
     justify-content: space-between;
-    margin: 30px 70px;
-    background-color: #495057;
-    border-radius: 8px;
+    margin: 0 30px 30px 30px;
+    background-color: #495057df;
+    border-radius: 0 0 8px 8px;
 }
 
 /* The inline display value is what makes the scrollbox horizontal instead of verticle. */
@@ -132,4 +174,26 @@ nav ul li a:hover {
     font-size: 16px;
     padding: 20px 20px;
     margin-bottom: 85px;
+}
+
+
+.bottomBoxes {
+    font-size: 45px;
+    font-family: var(--headerFont);
+    background-color: var(--boxBackground);
+    color: var(--headerColor);
+    display: flex;
+    display: inline-block;
+    margin-left: 37px;
+}
+
+#previousJobs {
+    width: 500px;
+    height: auto;
+    text-align: center;
+}
+
+#contactForm {
+    width: 800px;
+    height: auto;
 }

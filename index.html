@@ -15,15 +15,25 @@
         <h1>Zeus Cordeiro's Portfolio</h1>
         <nav>
             <ul>
-                <li> <a href="#">About Me</a> </li>
-                <li> <a href="#">Projects</a> </li>
-                <li> <a href="#">Contact</a> </li>
+                <li> <a href="#aboutMeSection">About Me</a> </li>
+                <li> <a href="#projectLinks">Projects</a> </li>
+                <li> <a href="#contactForm">Contact</a> </li>
             </ul>
         </nav>
 
     </header>
     <main>
-        <div id="backgroundImage"></div>
+        <section id="aboutMeSection" class="aboutMe">
+        <img src="./assets/self-pic.jpg" alt="Picture of Zeus">
+            <div class="aboutMeBlurb">
+                <h2>About Me</h2>
+                <p>
+                    Hello and thank you for visiting my portfolio! My name is Zeus I'm in my early 30's and live in the Tampa Bay area with my long time girlfriend, 3 cats and our dog. <br> I have been interested in computer programing and software engineering for many years now but have never been able to dedicate enough time really do anything with it. <br> I started working in craft breweries shortly after I turned 21 and became the general manager of a brewery by the time I was 24, I spent the next several years focusing most of my time on my work and really did enjoy the company I worked for and the people I worked with in that time. Unfortunately though I didn't feel like there was anywhere else to grow within that industry and decided this was the time to make a change. <br> 
+                </p>
+            </div>
+            
+        </section>
+
         <section id="projectLinks">
             <h2>Project links</h2>  
             <!-- side scrolling box showing project screenshots with their link and github info attached. -->
@@ -67,15 +77,23 @@
             </div>
         </section>
 
-        <section id="previousJobs">
+        <section class="bottomBoxes" id="previousJobs">
             <h2>Previous Jobs & References</h2>
             <!-- Add last two jobs with references for each job -->
+            <p class="jobHistory">
+                Coppertail Brewing <br> 2014 - 2022 
+            </p>
+            <p class="jobHistory">
+                Cigar City Brewing <br> 2011-2014
+            </p>
         </section>
 
-        <section id="Contact Form">
+        <section class="bottomBoxes" id="contactForm">
             <div id="backgroundImage2"></div>
-            <h2>Contact Form</h2>  
+            <h2>Contact information</h2>  
             <!-- Add Contact Form information, including what you're currently working on -->
+            <p>Email:</p>   
+            <p>Social Media</p>
         </section>
     </main>
 </body>
