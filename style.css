@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@1&family=Lobster&display=swap');
 
 
-/* Variables for reused fonts and colors throughout my page */
+/* Variables for reused font styles and colors throughout my page */
 :root {
     --buttonFont: 'Lobster', sans-serif;
     --headerFont: 'Cormorant', serif;
@@ -18,10 +18,10 @@
 }
 
 body {
-    /* background-image: url(./assets/colorful-abstract-universe.jpg); */
+    background-image: url(./assets/colorful-abstract-universe.jpg);
     background-color: #3a726cb6;    
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 
@@ -251,7 +251,6 @@ nav a:hover {
     color: blue;
 }
 
-
 /* Below are the media queries used to help the page adjust to screen size as needed. */
 
 /* As screen gets small I removed image to make it look and flow better, I also removed the hover effect over the about me text for easier visibility on smaller screens. Otherwise I just adjusted sizing of elements to better fit smaller screens. */
@@ -303,8 +302,12 @@ nav a:hover {
 
 @media screen and (max-width: 768px) {
     header {
-        padding-right: 20%;
+        flex-direction: column;
         background-color: #495057;
+    }
+
+    header h1 {
+        margin: auto;
     }
 
     .aboutMeBlurb {
