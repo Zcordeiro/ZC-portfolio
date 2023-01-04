@@ -18,11 +18,14 @@
 }
 
 body {
-    background-image: url(./assets/colorful-abstract-universe.jpg);
-    background-color: #3a726cb6;    
+    background-image: url(./assets/universe.jpg);
+    /* background-color: #E0C9A6;    */
     background-size: cover;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
+
+.hidden
 
 
 /* covers the font color across the header, but only the font style and font size of nav links. */
