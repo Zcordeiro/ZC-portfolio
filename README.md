@@ -15,6 +15,6 @@ On this webpage you'll find links to all of my programming projects, unfortunate
 
 ## Link to github pages and repo
 
-Published Page - https://zcordeiro.github.io/ZC-portfolio/
+Published Page - https://zcordeiro.github.io/Zeus-Cordeiro-portfolio/
 
 REPO - https://github.com/Zcordeiro/ZC-portfolio
