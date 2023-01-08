@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="../css/blog-post.css">
+
+
+    <!-- Well looks like you're here to inspect somethings -->
+
+    <title>Zeus' Portfolio[WIP Test]</title>
+</head>
+
+<body>
+    <div id="topOfPage"></div>
+    <div class="body">
+        <!-- The section below until you hit the * are both the regular nav bar and the mobile one. -->
+        <section class="navigations">
+            <nav id="mainNav"
+                class="navFonts mb-10 flex justify-evenly bg-slate-800 p-2 items-center w-screen fixed top-0 md:flex">
+                <h1 id="mainNavText" class="text-4xl text-white">Zeus Cordeiro's Portfolio</h1>
+                <div class="text-2xl hidden space-x-8 md:flex">
+                    <a class="m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl"
+                        href="../../index.html">Home</a>
+                    <a class="m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl"
+                        href="../../index.html">Projects</a>
+                    <a id="blogPageLink" class="m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl"
+                        href="index.html">Blog</a>
+                </div>
+                <div id="hamburgerMenu" class="flex md:hidden">
+                    <div class="space-y-2">
+                        <span class="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+                        <span class="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+                        <span class="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+                    </div>
+                </div>
+            </nav>
+            <!-- Nav section that apears on smaller screens -->
+            <nav id="mobileNav" class="hidden bg-slate-800 navFonts md:hidden">
+                <h1 class="text-2xl text-white underline">Zeus' Portfolio</h1>
+                <div class="flex flex-col">
+                    <a id="mobileHomeBtn"
+                        class="m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl" href="../../index.html">Home</a>
+                    <a class="m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl"
+                        href="../../index.html">Projects</a>
+                    <a class="m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl" href="#">Blog</a>
+                </div>
+            </nav>
+        </section>
+        <!-- * -->
+
+        <!-- The section below until you hit the ** are the different blog posts links -->
+        <section class="flex flex-col justify-center">
+
+            <div class="m-5 mt-24 text-white">
+                <h1 id="featuredProjectText"
+                    class="headingTitle text-4xl italic border border-dashed p-4 hover:bg-slate-300/20 hover:cursor-pointer text-center">
+                    Under Construction! Come Back Soon!</h1>
+                <div class="fprojectContainer text-center flex flex-wrap items-center justify-evenly">
+                    <div class="blog">
+                        <div class="m-4 resAndBlobBoxes" id="featuredBlog">
+                            <img class="p-2 h-56 w-64 hover:cursor-pointer"
+                                src="../blog-posts/blog-assets/images/background-blog-img1.png"
+                                alt="screenshot of resume">
+                            <h1
+                                class="blogText absolute text-3xl text-slate-100 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hover:cursor-pointer">
+                                Coming Soon</h1>
+                            <span class="text-white"><a href="" target="_blank"></a></span>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+
+                        <div class="m-4 resAndBlobBoxes" id="featuredBlog2">
+                            <img class="p-2 h-56 w-64 hover:cursor-pointer"
+                                src="../blog-posts/blog-assets/images/background-blog-img2.png"
+                                alt="screenshot of resume">
+                            <h1
+                                class="blogText absolute text-3xl text-slate-900 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hover:cursor-pointer">
+                                Coming Soon</h1>
+                            <span class="text-white"><a href="" target="_blank"></a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="m-5 text-white italic">
+                <h1 id="otherProjectText"
+                    class="headingTitle text-4xl italic border border-dashed p-4 hover:bg-slate-300/20 hover:cursor-pointer text-center">
+                    Under Construction! Come Back Soon!
+                </h1>
+                <div id="otherProjectsWindow" class="text-center flex flex-wrap items-center justify-evenly">
+                    <div class="blog">
+                        <div class="m-4 resAndBlobBoxes">
+                            <img class="p-2 h-56 w-64 hover:cursor-pointer"
+                                src="../blog-posts/blog-assets/images/background-blog-img3.png"
+                                alt="screenshot of resume">
+                            <h1
+                                class="blogText absolute text-3xl text-slate-100 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hover:cursor-pointer">
+                                Coming Soon</h1>
+                            <span class="text-white"><a href="" target="_blank"></a></span>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <div class="m-4 resAndBlobBoxes">
+                            <img class="p-2 h-56 w-64 hover:cursor-pointer"
+                                src="../blog-posts/blog-assets/images/background-blog-img4.png"
+                                alt="screenshot of resume">
+                            <h1
+                                class="blogText absolute text-3xl text-slate-100 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hover:cursor-pointer">
+                                Coming Soon</h1>
+                            <span class="text-white"><a href="" target="_blank"></a></span>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <div class="m-4 resAndBlobBoxes">
+                            <img class="p-2 h-56 w-64 hover:cursor-pointer"
+                                src="../blog-posts/blog-assets/images/background-blog-img5.png"
+                                alt="screenshot of resume">
+                            <h1
+                                class="blogText absolute text-3xl text-slate-100 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hover:cursor-pointer">
+                                Coming Soon</h1>
+                            <span class="text-white"><a href="" target="_blank"></a></span>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <div class="m-4 resAndBlobBoxes">
+                            <img class="p-2 h-56 w-64 hover:cursor-pointer"
+                                src="../blog-posts/blog-assets/images/background-blog-img6.png"
+                                alt="screenshot of resume">
+                            <h1
+                                class="blogText absolute text-3xl text-slate-100 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hover:cursor-pointer">
+                                Coming Soon</h1>
+                            <span class="text-white"><a href="" target="_blank"></a></span>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <div class="m-4 resAndBlobBoxes">
+                            <img class="p-2 h-56 w-64 hover:cursor-pointer"
+                                src="../blog-posts/blog-assets/images/background-blog-img3.png"
+                                alt="screenshot of resume">
+                            <h1
+                                class="blogText absolute text-3xl text-slate-100 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hover:cursor-pointer">
+                                Coming Soon</h1>
+                            <span class="text-white"><a href="" target="_blank"></a></span>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <div class="m-4 resAndBlobBoxes">
+                            <img class="p-2 h-56 w-64 hover:cursor-pointer"
+                                src="../blog-posts/blog-assets/images/background-blog-img4.png"
+                                alt="screenshot of resume">
+                            <h1
+                                class="blogText absolute text-3xl text-slate-100 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hover:cursor-pointer">
+                                Coming Soon</h1>
+                            <span class="text-white"><a href="" target="_blank"></a></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ** -->
+
+<!-- These are the "stars" in the background -->
+        <section class="stars">
+            <div class="star">.</div>
+            <div class="star">.</div>
+            <div class="star">.</div>
+            <div class="star">.</div>
+            <div class="star">.</div>
+            <div class="star">.</div>
+            <div class="star">.</div>
+            <div class="star">.</div>
+            <div class="star">.</div>
+            <div class="star">.</div>
+            <div class="star">.</div>
+            <div class="star">.</div>
+            <div class="star">.</div>
+            <div class="star">.</div>
+            <div class="star">.</div>
+        </section>
+<!-- END of stars -->
+
+        <footer>
+            Thanks for coming by!
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

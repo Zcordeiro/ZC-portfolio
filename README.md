@@ -9,7 +9,7 @@ On this webpage you'll find links to all of my programming projects, unfortunate
 ---
 
 ## Screenshot of finished page 
-![screenshot of portfolio page](./assets/screenshot-portfolio.png)
+![screenshot of portfolio page](./assets/images/screenshot-portfolio.png)
 
 ---
 
