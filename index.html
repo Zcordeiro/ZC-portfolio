@@ -7,6 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -54,7 +71,8 @@
                         class="m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl">Home</a>
                     <a class="m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl"
                         href="#featuredProjectText">Projects</a>
-                    <a class="m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl" href="assets/blog-posts/index.html">Blog</a>
+                    <a class="m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl"
+                        href="assets/blog-posts/index.html">Blog</a>
                     <a class="aboutMeLink m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl"
                         href="#">About Me</a>
                 </div>
@@ -83,15 +101,15 @@
                     <br>
                 </div>
 
-                <div id="aboutMeText" class="text-xl leading-7 hidden">
-                    <h2 class="text-5xl text-white">About Me</h2>
+                <div id="aboutMeText" class="text-xl mt-8 leading-7 hidden">
+                    <h2 class="text-4xl text-white">About Me</h2>
                     <p>
-                        I am in the process of completing the UCF Full Stack Developer bootcamp, as well as working on
-                        my
-                        own
-                        through different online programs such as,
-                        Mosh Coding Made Simple and FreeCodeCamp to continue expanding my knowledge in this ever growing
-                        industry.
+                        I have nearly a decade of management experience in the hospitality industry and am now
+                        transitioning to software development.
+                        My skills include proficiency in
+                        <i>HTML, CSS, Javascript, Node.js, JQuery, Bootstrap, Tailwind, and more.</i>
+                        I am seeking an opportunity to utilize my existing knowledge and continue to grow and learn more
+                        in this dynamic field.
                         <br>
                         Visit my <a class="text-2xl hover:text-3xl line-through decoration-8 decoration-indigo-800/50"
                             href="assets/blog-posts/index.html">blog</a> or <a
@@ -118,8 +136,12 @@
                     <div class="hidden fprojectBoxes" id="project1">
                         <img class="m-2 md:h-52 md:w-72 p-4" src="assets/images/screenshot-astromusic.png"
                             alt="screenshot of project">
-                        <p class="fadeInBox"> <a class="fadeInBoxText blogText"
-                                href="https://astro-div.github.io/Astro-Music/" target="_blank">Visit Site!</a></p>
+                        <p class="fadeInBox">
+                            <button id="featuredProject1" type="button" class="fadeInBoxText blogText text-white bg-slate-900"
+                                data-bs-toggle="modal" data-bs-target="#modal">
+                                Learn More!
+                            </button>
+                        </p>
                         <div class="text-white text-xl">
                             <p>AstroMusic
                                 <br>
@@ -130,14 +152,18 @@
                     </div>
 
                     <div class="hidden fprojectBoxes" id="project2">
-                        <img class="m-2 md:h-52 md:w-72 p-4" src="assets/images/screenshot-weatherApp.png"
+                        <img class="m-2 md:h-52 md:w-72 p-4" src="assets/images/screenshot-timer.png"
                             alt="screenshot of project">
-                        <p class="fadeInBox"> <a class="fadeInBoxText blogText"
-                                href="https://zcordeiro.github.io/city-weather-app/" target="_blank">Visit Site!</a></p>
+                        <p class="fadeInBox">
+                            <button id="featuredProject2" type="button" class="fadeInBoxText blogText text-white bg-slate-900"
+                                data-bs-toggle="modal" data-bs-target="#modal">
+                                Learn More!
+                            </button>
+                        </p>
                         <div class="text-white text-xl">
-                            <p>City Weather App
+                            <p>Pomodoro Study Timer
                                 <br>
-                                <a href="https://github.com/Zcordeiro/city-weather-app" target="_blank">[Github
+                                <a href="https://github.com/Zcordeiro/Study-Timer" target="_blank">[Github
                                     REPO]</a>
                             </p>
                         </div>
@@ -154,10 +180,34 @@
 
                 <!-- Images from https://pixabay.com/photos/coming-soon-chalk-board-blackboard-2550190/ -->
                 <div id="otherProjectsWindow" class="text-center flex flex-wrap items-center justify-evenly">
+
                     <div class="hidden projectBoxes" id="project3">
+                        <img class="m-2 md:h-52 md:w-72 p-4" src="./assets/images/screenshot-weatherApp.png"
+                            alt="screenshot of project">
+                        <p class="fadeInBox">
+                            <button type="button" class="fadeInBoxText blogText text-white bg-slate-900"
+                                data-bs-toggle="modal" data-bs-target="#modal">
+                                Learn More!
+                            </button>
+                        </p>
+                        <div class="text-white text-xl">
+                            <p>City Weather App
+                                <br>
+                                <a href="https://github.com/Zcordeiro/City-Weather-Forecast" target="_blank">[Github
+                                    REPO]</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hidden projectBoxes" id="project4">
                         <img class="m-2 md:h-52 md:w-72 p-4" src="./assets/images/screenshot-passwordGen.png"
                             alt="screenshot of project">
-                        <p class="fadeInBox"> <a class="fadeInBoxText" href="#" target="_blank">Visit Site!</a></p>
+                        <p class="fadeInBox">
+                            <button type="button" class="fadeInBoxText blogText text-white bg-slate-900"
+                                data-bs-toggle="modal" data-bs-target="#modal">
+                                Learn More!
+                            </button>
+                        </p>
                         <div class="text-white text-xl">
                             <p>Random Password Generator
                                 <br>
@@ -167,41 +217,37 @@
                         </div>
                     </div>
 
-                    <div class="hidden projectBoxes" id="project4">
+                    <div class="hidden projectBoxes" id="project5">
                         <img class="m-2 md:h-52 md:w-72 p-4" src="./assets/images/screenshot-daily-planner.png"
                             alt="screenshot of project">
-                        <p class="fadeInBox"> <a class="fadeInBoxText" href="https://zcordeiro.github.io/daily-tasks-list/" target="_blank">Visit Site!</a></p>
+                            <p class="fadeInBox">
+                                <button type="button" class="fadeInBoxText blogText text-white bg-slate-900" data-bs-toggle="modal"
+                                    data-bs-target="#modal">
+                                    Learn More!
+                                </button>
+                            </p>
                         <div class="text-white text-xl">
                             <p>Daily Planner
                                 <br>
-                                <a href="https://github.com/Zcordeiro/daily-tasks-list" target="_blank">[Github REPO]</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="hidden projectBoxes" id="project5">
-                        <img class="m-2 md:h-52 md:w-72 p-4" src="./assets/images/screenshot-pre-work-study-guide.png"
-                            alt="screenshot of project">
-                        <p class="fadeInBox"> <a class="fadeInBoxText"
-                                href="https://zcordeiro.github.io/prework-study-guide/" target="_blank">Visit Site!</a>
-                        </p>
-                        <div class="text-white text-xl">
-                            <p>Pre-Work Study Guide
-                                <br>
-                                <a href="https://github.com/Zcordeiro/prework-study-guide.git" target="_blank">[Github
+                                <a href="https://github.com/Zcordeiro/daily-tasks-list" target="_blank">[Github
                                     REPO]</a>
                             </p>
                         </div>
                     </div>
 
                     <div class="hidden projectBoxes" id="project6">
-                        <img class="m-2 md:h-52 md:w-72 p-4" src="./assets/images/coming-soon.jpg"
+                        <img class="m-2 md:h-52 md:w-72 p-4" src="./assets/images/screenshot-team-profile.png"
                             alt="screenshot of project">
-                        <p class="fadeInBox"> <a class="fadeInBoxText" href="#" target="_blank">Visit Site!</a></p>
+                        <p class="fadeInBox">
+                            <button type="button" class="fadeInBoxText blogText text-white bg-slate-900"
+                                data-bs-toggle="modal" data-bs-target="#modal">
+                                Learn More!
+                            </button>
+                        </p>
                         <div class="text-white text-xl">
-                            <p>Coming Soon
+                            <p>Team Profile Generator
                                 <br>
-                                <a href="##" target="_blank">[Github REPO]</a>
+                                <a href="https://github.com/Zcordeiro/Team-Profile-Generator" target="_blank">[Github REPO]</a>
                             </p>
                         </div>
                     </div>
@@ -209,7 +255,12 @@
                     <div class="hidden projectBoxes" id="project7">
                         <img class="m-2 md:h-52 md:w-72 p-4" src="./assets/images/coming-soon.jpg"
                             alt="screenshot of project">
-                        <p class="fadeInBox"> <a class="fadeInBoxText" href="#" target="_blank">Visit Site!</a></p>
+                        <p class="fadeInBox">
+                            <button type="button" class="fadeInBoxText blogText text-white bg-slate-900"
+                                data-bs-toggle="modal" data-bs-target="#modal">
+                                Learn More!
+                            </button>
+                        </p>
                         <div class="text-white text-xl">
                             <p>Coming Soon
                                 <br>
@@ -219,8 +270,59 @@
                     </div>
                 </div>
             </div>
+
+            <!-- This pop up box are the modal boxes created once you select a project. -->
+            <div id="popupBox">
+                <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+                    id="modal" tabindex="-1" aria-labelledby="modal"
+                    aria-modal="true" role="dialog">
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable relative w-auto pointer-events-none">
+                        <div
+                            class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-gray-600/90 bg-clip-padding rounded-md outline-none text-current">
+                            <div
+                                class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                                <h5 class="text-xl font-medium leading-normal text-white"
+                                    id="modalLabel">
+                                    Modal title
+                                </h5>
+                                <button type="button"
+                                    class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                                    data-bs-dismiss="modal" aria-label="Close">X</button>
+                            </div>
+                            <div class="modal-body relative p-4 text-white">
+                                <img id="projectImage" src=" " alt="image of project">
+                                <p id="projectDescription">This is some placeholder content to show a vertically centered modal. We've added
+                                    some extra copy here to show how vertically centering the modal works when combined
+                                    with scrollable modals. We also use some repeated line breaks to quickly extend the
+                                    height of the content, thereby triggering the scrolling. When content becomes longer
+                                    than the predefined max-height of modal, content will be cropped and scrollable
+                                    within the modal.</p>
+                                <br>
+
+                            </div>
+                            <div
+                                class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+                                <a id="gitRepo" class="inline-block px-6 py-2.5 bg-zinc-900 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-zinc-700 hover:shadow-lg focus:bg-zinc-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-zinc-800 active:shadow-lg transition duration-150 ease-in-out m-1" href=" " target="_blank">Github
+                                    REPO</a>
+                                <button type="button"
+                                    class="inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
+                                    data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                                <a id="siteLink" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ml-1"
+                                    href=" " target="_blank">Visit Site!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
         </section>
         <!-- *** -->
+
 
         <!-- The section below until you hit the **** are the boxes that include my resume, featured blog post, and socials. -->
         <section class="sm:flex sm:flex-col sm:text-left md:flex md:flex-row md:text-center justify-evenly m-5">
@@ -259,7 +361,8 @@
 
                 <div
                     class="text-white border border-dashed p-4 mt-5 hover:bg-slate-300/20 hover:cursor-pointer text-2xl headingTitle">
-                    <a class="emailInfo" href="mailto:zcordeiro512@gmail.com">Email Me!</a>
+                    <a class="emailInfo" href="mailto:zcordeiro512@gmail.com">Email Me!</a> <br>
+                    <span class="text-xl">zeus.cordeiro@gmail.com</span>
                 </div>
             </div>
         </section>
@@ -292,6 +395,7 @@
     </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>

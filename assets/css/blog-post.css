@@ -181,6 +181,15 @@ footer {
   animation: animate 9s linear infinite;
 }
 
+.blog-body-heading {
+  font-family: 'Source Code Pro', monospace;
+  padding: 2%;
+}
+
+.blog-body-text, .blogTitle {
+  font-family: 'Roboto', sans-serif;
+}
+
 @keyframes animate {
   0% {
     transform: scale(0) translateY(0) rotate(70deg);
