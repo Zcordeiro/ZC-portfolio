@@ -137,8 +137,9 @@
                         <img class="m-2 md:h-52 md:w-72 p-4" src="assets/images/screenshot-astromusic.png"
                             alt="screenshot of project">
                         <p class="fadeInBox">
-                            <button id="featuredProject1" type="button" class="fadeInBoxText blogText text-white bg-slate-900"
-                                data-bs-toggle="modal" data-bs-target="#modal">
+                            <button id="featuredProject1" data-te-toggle="modal" data-te-target="#exampleModalCenteredScrollable"
+                            data-te-ripple-init data-te-ripple-color="light"  type="button"
+                            class="fadeInBoxText blogText text-white bg-slate-900">
                                 Learn More!
                             </button>
                         </p>
@@ -155,8 +156,9 @@
                         <img class="m-2 md:h-52 md:w-72 p-4" src="assets/images/screenshot-timer.png"
                             alt="screenshot of project">
                         <p class="fadeInBox">
-                            <button id="featuredProject2" type="button" class="fadeInBoxText blogText text-white bg-slate-900"
-                                data-bs-toggle="modal" data-bs-target="#modal">
+                            <button id="featuredProject2" data-te-toggle="modal" data-te-target="#exampleModalCenteredScrollable"
+                            data-te-ripple-init data-te-ripple-color="light"  type="button"
+                            class="fadeInBoxText blogText text-white bg-slate-900">
                                 Learn More!
                             </button>
                         </p>
@@ -170,6 +172,7 @@
                     </div>
                 </div>
             </div>
+
 
             <!-- !!Other Projects toggle box starts here!! -->
             <div class="m-5 text-white italic">
@@ -185,8 +188,9 @@
                         <img class="m-2 md:h-52 md:w-72 p-4" src="./assets/images/screenshot-weatherApp.png"
                             alt="screenshot of project">
                         <p class="fadeInBox">
-                            <button type="button" class="fadeInBoxText blogText text-white bg-slate-900"
-                                data-bs-toggle="modal" data-bs-target="#modal">
+                            <button data-te-toggle="modal" data-te-target="#exampleModalCenteredScrollable"
+                            data-te-ripple-init data-te-ripple-color="light"  type="button"
+                            class="fadeInBoxText blogText text-white bg-slate-900">
                                 Learn More!
                             </button>
                         </p>
@@ -203,8 +207,9 @@
                         <img class="m-2 md:h-52 md:w-72 p-4" src="./assets/images/screenshot-passwordGen.png"
                             alt="screenshot of project">
                         <p class="fadeInBox">
-                            <button type="button" class="fadeInBoxText blogText text-white bg-slate-900"
-                                data-bs-toggle="modal" data-bs-target="#modal">
+                            <button data-te-toggle="modal" data-te-target="#exampleModalCenteredScrollable"
+                            data-te-ripple-init data-te-ripple-color="light"  type="button"
+                            class="fadeInBoxText blogText text-white bg-slate-900">
                                 Learn More!
                             </button>
                         </p>
@@ -220,12 +225,13 @@
                     <div class="hidden projectBoxes" id="project5">
                         <img class="m-2 md:h-52 md:w-72 p-4" src="./assets/images/screenshot-daily-planner.png"
                             alt="screenshot of project">
-                            <p class="fadeInBox">
-                                <button type="button" class="fadeInBoxText blogText text-white bg-slate-900" data-bs-toggle="modal"
-                                    data-bs-target="#modal">
-                                    Learn More!
-                                </button>
-                            </p>
+                        <p class="fadeInBox">
+                            <button data-te-toggle="modal" data-te-target="#exampleModalCenteredScrollable"
+                            data-te-ripple-init data-te-ripple-color="light"  type="button"
+                            class="fadeInBoxText blogText text-white bg-slate-900">
+                                Learn More!
+                            </button>
+                        </p>
                         <div class="text-white text-xl">
                             <p>Daily Planner
                                 <br>
@@ -239,15 +245,17 @@
                         <img class="m-2 md:h-52 md:w-72 p-4" src="./assets/images/screenshot-team-profile.png"
                             alt="screenshot of project">
                         <p class="fadeInBox">
-                            <button type="button" class="fadeInBoxText blogText text-white bg-slate-900"
-                                data-bs-toggle="modal" data-bs-target="#modal">
+                            <button data-te-toggle="modal" data-te-target="#exampleModalCenteredScrollable"
+                            data-te-ripple-init data-te-ripple-color="light"  type="button"
+                            class="fadeInBoxText blogText text-white bg-slate-900">
                                 Learn More!
                             </button>
                         </p>
                         <div class="text-white text-xl">
                             <p>Team Profile Generator
                                 <br>
-                                <a href="https://github.com/Zcordeiro/Team-Profile-Generator" target="_blank">[Github REPO]</a>
+                                <a href="https://github.com/Zcordeiro/Team-Profile-Generator" target="_blank">[Github
+                                    REPO]</a>
                             </p>
                         </div>
                     </div>
@@ -256,8 +264,9 @@
                         <img class="m-2 md:h-52 md:w-72 p-4" src="./assets/images/coming-soon.jpg"
                             alt="screenshot of project">
                         <p class="fadeInBox">
-                            <button type="button" class="fadeInBoxText blogText text-white bg-slate-900"
-                                data-bs-toggle="modal" data-bs-target="#modal">
+                            <button data-te-toggle="modal" data-te-target="#exampleModalCenteredScrollable"
+                            data-te-ripple-init data-te-ripple-color="light"  type="button"
+                            class="fadeInBoxText blogText text-white bg-slate-900">
                                 Learn More!
                             </button>
                         </p>
@@ -273,51 +282,61 @@
 
             <!-- This pop up box are the modal boxes created once you select a project. -->
             <div id="popupBox">
-                <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
-                    id="modal" tabindex="-1" aria-labelledby="modal"
+                <div data-te-modal-init
+                    class="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+                    id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollable"
                     aria-modal="true" role="dialog">
-                    <div
-                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable relative w-auto pointer-events-none">
+                    <div data-te-modal-dialog-ref
+                        class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
                         <div
-                            class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-gray-600/90 bg-clip-padding rounded-md outline-none text-current">
+                            class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
                             <div
-                                class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
-                                <h5 class="text-xl font-medium leading-normal text-white"
-                                    id="modalLabel">
+                                class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                                <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+                                    id="exampleModalCenteredScrollableLabel">
                                     Modal title
                                 </h5>
                                 <button type="button"
-                                    class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
-                                    data-bs-dismiss="modal" aria-label="Close">X</button>
+                                    class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                                    data-te-modal-dismiss aria-label="Close">
+                                    X
+                                </button>
                             </div>
-                            <div class="modal-body relative p-4 text-white">
+                            <div class="relative p-4">
                                 <img id="projectImage" src=" " alt="image of project">
-                                <p id="projectDescription">This is some placeholder content to show a vertically centered modal. We've added
-                                    some extra copy here to show how vertically centering the modal works when combined
-                                    with scrollable modals. We also use some repeated line breaks to quickly extend the
-                                    height of the content, thereby triggering the scrolling. When content becomes longer
-                                    than the predefined max-height of modal, content will be cropped and scrollable
-                                    within the modal.</p>
+                                <p id="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                                    beatae, perferendis ipsam neque explicabo totam non deleniti ipsum facere. Quas
+                                    assumenda suscipit ducimus eligendi, deserunt veniam consectetur quaerat quos quo
+                                    consequuntur labore! Consequuntur quaerat accusamus voluptatibus saepe, rem
+                                    reprehenderit rerum!</p>
                                 <br>
-
                             </div>
                             <div
-                                class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
-                                <a id="gitRepo" class="inline-block px-6 py-2.5 bg-zinc-900 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-zinc-700 hover:shadow-lg focus:bg-zinc-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-zinc-800 active:shadow-lg transition duration-150 ease-in-out m-1" href=" " target="_blank">Github
-                                    REPO</a>
+                                class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
                                 <button type="button"
-                                    class="inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
-                                    data-bs-dismiss="modal">
+                                    class="inline-block rounded bg-slate-800 px-6 pt-2.5 pb-2 text-xs text-white font-medium uppercase leading-normal text-slate-700 transition duration-150 ease-in-out hover:bg-slate-accent-100 focus:bg-slate-accent-100 focus:outline-none focus:ring-0 active:bg-slate-accent-200"
+                                    data-te-modal-dismiss data-te-ripple-init data-te-ripple-color="light">
                                     Close
                                 </button>
-                                <a id="siteLink" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ml-1"
-                                    href=" " target="_blank">Visit Site!</a>
+                                <button type="button"
+                                    class="ml-1 inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-primary-600 focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700"
+                                    data-te-ripple-init data-te-ripple-color="light">
+                                    <a id="gitRepo"
+                                        class="inline-block px-6 py-2.5 bg-zinc-900 text-white font-medium text-xs leading-tight uppercase rounded  hover:bg-zinc-800  focus:bg-zinc-700 focus:outline-none focus:ring-0 active:bg-zinc-800  transition duration-150 ease-in-out m-1"
+                                        href=" " target="_blank">Github
+                                        REPO</a>
+                                </button>
+                                <button type="button"
+                                    class="ml-1 inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-primary-600 focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700"
+                                    data-te-ripple-init data-te-ripple-color="light">
+                                    <a id="siteLink"
+                                        class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ml-1"
+                                        href=" " target="_blank">Visit Site!</a>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
         </section>
