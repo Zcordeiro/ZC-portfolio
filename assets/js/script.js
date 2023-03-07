@@ -1,4 +1,5 @@
 let projectTitle = $('#modalLabel');
+let techUsed = $('#techUsed')
 let imgSource = $('#projectImage');
 let projectDescription = $('#projectDescription');
 let publishedLink = $('#siteLink');
@@ -8,6 +9,7 @@ let projectsArray = [
   {
     name: "Portfolio",
     description: "This is my portfolio, built using HTML, CSS, Javascript. Also JQuery and Tailwind CSS",
+    techUsed: "#",
     image: "#",
     repoLink: "#",
     siteLink: "#"
@@ -15,6 +17,7 @@ let projectsArray = [
   {
     name: "AstroMusic",
     description: "AstroMusic a way to help connect you to your daily horoscope and discover some new music using your astrological sign! We've carefully currated a playlist based off of your mood and have discovered your lucky hour and number for the day",
+    techUsed: "HTML - CSS - JavaScript - Tailwind CSS - JQuery - Aztro API - Spotify API",
     image: "assets/images/screenshot-astromusic.png",
     gitRepo: "https://github.com/Astro-Div/Astro-Music",
     siteLink: "https://astro-div.github.io/Astro-Music/"
@@ -22,6 +25,7 @@ let projectsArray = [
   {
     name: "Study Timer",
     description: "This is a pomodoro style timer made to help the user focus while studying and working. Users can also adjust the times and backgrounds to better suite their needs.",
+    techUsed: "HTML - CSS - JavaScript - Tailwind CSS - Express",
     image: "assets/images/screenshot-timer.png",
     gitRepo: "https://github.com/Zcordeiro/Study-Timer",
     siteLink: "https://pure-reef-70690.herokuapp.com/"
@@ -29,6 +33,7 @@ let projectsArray = [
   {
     name: "City Weather App",
     description: "Simple weather app using the Openweather API that allows you to search your city and get back a five day forecast.",
+    image: "aHTML - CSS - JavaScript - Openweather API - Dayjs",
     image: "assets/images/screenshot-weatherApp.png",
     gitRepo: "https://github.com/Zcordeiro/City-Weather-Forecast",
     siteLink: "https://zcordeiro.github.io/City-Weather-Forecast/"
@@ -36,6 +41,7 @@ let projectsArray = [
   {
     name: "Random Password Generator",
     description: "Password generator that prompts the user for the qualificaltions of the password needed and returns a randomly generated password.",
+    image: "HTML - CSS - JavaScript",
     image: "assets/images/screenshot-passwordGen.png",
     gitRepo: "https://github.com/Zcordeiro/random-password-generator",
     siteLink: "https://zcordeiro.github.io/random-password-generator/"
@@ -43,6 +49,7 @@ let projectsArray = [
   {
     name: "Daily Planner",
     description: "JQuery workday scheduler that can help a user outline and organize their workday by the hour.",
+    image: "HTML - CSS - JavaScript",
     image: "assets/images/screenshot-daily-planner.png",
     gitRepo: "https://github.com/Zcordeiro/Daily-Workday-Scheduler",
     siteLink: "https://zcordeiro.github.io/Daily-Workday-Scheduler/"
@@ -50,6 +57,7 @@ let projectsArray = [
   {
     name: "Team Profile Generator",
     description: "This app will help you build a team profile based on the information you enter into it.",
+    image: "HTML - CSS - JavaScript - InquireJS",
     image: "assets/images/screenshot-team-profile.gif",
     gitRepo: "https://github.com/Zcordeiro/Team-Profile-Generator",
     siteLink: "#"
@@ -100,7 +108,8 @@ $("#otherProjectText").click(() => {
 });
 
 $("#featuredProject1").click(() => {
-  projectTitle.text(projectsArray[1].name)
+  projectTitle.text(projectsArray[1].name);
+  techUsed.text(projectsArray[1].techUsed);
   imgSource.attr('src', projectsArray[1].image);
   projectDescription.text(projectsArray[1].description);
   publishedLink.attr('href', projectsArray[1].siteLink);
@@ -108,7 +117,8 @@ $("#featuredProject1").click(() => {
 });
 
 $("#featuredProject2").click(() => {
-  projectTitle.text(projectsArray[2].name)
+  projectTitle.text(projectsArray[2].name);
+  techUsed.text(projectsArray[2].techUsed);
   imgSource.attr('src', projectsArray[2].image);
   projectDescription.text(projectsArray[2].description);
   publishedLink.attr('href', projectsArray[2].siteLink);
@@ -116,7 +126,8 @@ $("#featuredProject2").click(() => {
 });
 
 $("#project3").click(() => {
-  projectTitle.text(projectsArray[3].name)
+  projectTitle.text(projectsArray[3].name);
+  techUsed.text(projectsArray[3].techUsed);
   imgSource.attr('src', projectsArray[3].image);
   projectDescription.text(projectsArray[3].description);
   publishedLink.attr('href', projectsArray[3].siteLink);
@@ -124,7 +135,8 @@ $("#project3").click(() => {
 });
 
 $("#project4").click(() => {
-  projectTitle.text(projectsArray[4].name)
+  projectTitle.text(projectsArray[4].name);
+  techUsed.text(projectsArray[4].techUsed);
   imgSource.attr('src', projectsArray[4].image);
   projectDescription.text(projectsArray[4].description);
   publishedLink.attr('href', projectsArray[4].siteLink);
@@ -132,7 +144,8 @@ $("#project4").click(() => {
 });
 
 $("#project5").click(() => {
-  projectTitle.text(projectsArray[5].name)
+  projectTitle.text(projectsArray[5].name);
+  techUsed.text(projectsArray[5].techUsed);
   imgSource.attr('src', projectsArray[5].image);
   projectDescription.text(projectsArray[5].description);
   publishedLink.attr('href', projectsArray[5].siteLink);
@@ -141,6 +154,7 @@ $("#project5").click(() => {
 
 $("#project6").click(() => {
   projectTitle.text(projectsArray[6].name)
+  techUsed.text(projectsArray[6].techUsed);
   imgSource.attr('src', projectsArray[6].image);
   projectDescription.text(projectsArray[6].description);
   publishedLink.attr('href', projectsArray[6].siteLink);
@@ -148,7 +162,8 @@ $("#project6").click(() => {
 });
 
 $("#project7").click(() => {
-  projectTitle.text(projectsArray[7].name)
+  projectTitle.text(projectsArray[7].name);
+  techUsed.text(projectsArray[7].techUsed);
   imgSource.attr('src', projectsArray[7].image);
   projectDescription.text(projectsArray[7].description);
   publishedLink.attr('href', projectsArray[7].siteLink);
