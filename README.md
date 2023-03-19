@@ -1,20 +1,54 @@
-# ZC-portfolio
-This page will be a work in progress throughout my bootcamp time and throughout my career as a developer. 
+# Zeus Cordeiro-portfolio
+
+This page will be a constant work in progress throughout my developer career.
 
 ---
+
+ ## Table of Contents:
+  - [Information](#information)
+  - [Contact Information](#contact-information)
+  - [License](#license)
+  - [Contributions](#contributions)
+  - [Published Page](#page)
+  - [Repo](#repo)
+
 
 ## Information
-On this webpage you'll find links to all of my programming projects, unfortunately there aren't very many at this time, but I plan on adding more as time goes on!
+
+My name is Zeus, I'm a Web Developer with nearly a decade of management experience in the hospitality industry and an ever growing interest to learn new technologies. A problem solver comfortable working in fast paced environments, dedicated to accomplishing goals and completing projects in the most detailed and efficient manner possible.
+
+This webpage you'll find links to all of my programming projects. As I progress through my programming career I hope to update this portfolio and not only add new projects but new technologies and features that improve user experience and interaction with my projects. 
+
+Feel free to reach out for more information!
 
 ---
 
-## Screenshot of finished page 
+## Contact Information
+
+Email: zeus.cordeiro@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/zeus-cordeiro/
+
+## License
+
+N/A
+
+## Contributions
+
+N/A
+
+## Screenshot of finished page
+
 ![screenshot of portfolio page](./assets/images/screenshot-portfolio.png)
 
 ---
 
-## Link to github pages and repo
+# LINKS
 
-Published Page - https://zcordeiro.github.io/Zeus-Cordeiro-portfolio/
+## Link to portfolio
 
-REPO - https://github.com/Zcordeiro/ZC-portfolio
+https://zeuscordeiro.dev
+
+## Repo
+
+https://github.com/Zcordeiro/ZC-portfolio
