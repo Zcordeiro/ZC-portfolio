@@ -51,4 +51,4 @@ https://zeuscordeiro.dev
 
 ## Repo
 
-https://github.com/Zcordeiro/ZC-portfolio
+https://github.com/Zcordeiro/Zeus-Cordeiro-portfolio
